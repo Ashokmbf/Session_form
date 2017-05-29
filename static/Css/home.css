@@ -1,0 +1,23 @@
+h1{
+	color: blue;
+}
+body{
+	margin-top: 5cm;
+    background-image: url('{% images/bck.jpg %}');
+   
+}	
+a{
+	color:red;
+}
+.container{
+  margin: 0 auto;
+  width: 600px;
+  
+}
+a{
+  color:blue;
+}
+
+.user-detail{
+  background-color: #fff;
+}

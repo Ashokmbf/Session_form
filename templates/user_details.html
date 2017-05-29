@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'Css/user.css' %}">
+</head>
+<body>
+  <form action="{% url 'app1:user_detail_view' %}" method="post" >
+        {% csrf_token %}
+  <div class="user-detail">
+    <div class="container">
+      <a href="/user_detail/" class="btn1"></a> 
+      <a href="/qualification/" class="btn1"></a> 
+      <a href="/preview/" class="btn1"></a>
+      <!-- <img src='/static/images/plus.png'>
+      <img src='/static/images/plus.png'>
+      <img src='/static/images/plus.png'> -->
+      <h1>User Details</h1> 
+        <div class="contact">
+          <ul>
+
+            <li><label>User Name</label><input id="username" name="user_name" type="text" placeholder="Name"/></li><span id="err_name"></span>
+            <li><label>Email</label><input type="email" name="user_email" placeholder="Email"/></li><span id="err_email"></span>
+            <li><label>Phone</label><input type="tel" name="user_phone" placeholder="Phone"/></li><span id="err_phone"></span>
+            <li><label>City</label><input type="text" name="user_city" placeholder="City"/></li><span id="err_city"></span>
+            <li><label>Country</label><input type="text" name="user_country" placeholder="Country"/></li><span id="err_country"></span>
+          </ul>
+            <div class="button">
+              <form action="{% url 'qualification_view' %}">
+              <input type="submit" id="button" value="Next"><br><br>
+              </form>
+            </div> 
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="{% static 'Js/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'Js/userdetail.js' %}"></script>
+</body>
+</html>
