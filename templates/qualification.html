@@ -4,8 +4,7 @@
 <link rel="stylesheet" href="{% static 'Css/qualification.css' %}">
 </head>
 <body>
-  <form action="{% url 'app1:qualification_view' %}" method="post" name="user_details" novalidate>
-        {% csrf_token %}
+  
   <div class="user-detail">
     <div class="container">
       <div class="btnimg">
@@ -81,6 +80,10 @@
                   
                 </dl>
         </div>
+        <div class="button">
+            <a href="/user_detail/" class="btn2">Back</a> 
+             <a href="/preview/" class="btn2">Next</a>
+        </div> 
       </div> 
     </div>
   </div>

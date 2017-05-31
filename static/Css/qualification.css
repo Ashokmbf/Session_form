@@ -13,9 +13,7 @@ body{
   width: 600px;
   background-color: #fff;
 }
-a{
-  color:red;
-}
+
 
 .user-detail{
   background-color: #fff;
@@ -56,9 +54,17 @@ input {
   text-decoration: none;
   border-radius: 5px;
 }
-.button {
-  text-align: center;
 }
+.btn2{
+  background-color: green;
+  color: #fff;
+  padding: 18px 12px;
+  display: inline-block;
+  text-decoration: none;
+  
+  
+}
+
 .higher {
   width: 100%;
   display: inline-flex;
@@ -184,7 +190,7 @@ a {
   display: none;
   left: 0px;
   padding: 2px 15px 2px 5px;
-  position: absolute;
+  position: relative;
   top: 2px;
   width: 280px;
   list-style: none;
@@ -204,9 +210,12 @@ a {
 .dropdown dd ul li a:hover {
   background-color: #fff;
 }
+#next-button{
+    color: white;
+    background-color: green;
+}
 
-button {
-  background-color: green;
+button {  
   width: 302px;
   border: 0;
   padding: 10px 0;
@@ -227,4 +236,16 @@ button {
   position: relative;
   top: 0;
   transform: none;
+}
+.btn2{
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  margin-left: 75px;
+  padding: 18px;
+  border-radius: 20px;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
