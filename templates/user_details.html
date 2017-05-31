@@ -25,11 +25,13 @@
             <li><label>Country</label><input type="text" name="user_country" placeholder="Country"/></li><span id="err_country"></span>
           </ul>
             <div class="button">
-              <form action="{% url 'qualification_view' %}">
+              <form action="">
               <input type="submit" id="button" value="Next"><br><br>
-              </form>
+              <form>
             </div> 
         </div>
+        {{ email }}
+        {{ name }}
     </div>
   </div>
   <script type="text/javascript" src="{% static 'Js/jquery.min.js' %}"></script>
